@@ -32,6 +32,7 @@ ul {
   background: #fdbc54;
   border: 2px solid #000;
   color: #663399;
+  margin-bottom: 20px;
 }
 .color {
   color: #000;
@@ -39,6 +40,8 @@ ul {
 li{
   padding: 20px;
   font-size: 20px;
+  list-style: disc;
+  display: list-item;
 }
 
 figure {

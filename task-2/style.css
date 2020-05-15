@@ -1,6 +1,3 @@
- * {
-box-sizing: border-box;
-}
 body {
 	font-family: sans-serif;
 }
@@ -33,6 +30,7 @@ a {
 	text-decoration: none;
 	padding: 10px 0;
 	text-transform: uppercase;
+	border-bottom: 2px solid #000;
 }
 a:hover {
 	color: #2fd08d;
@@ -41,13 +39,13 @@ a:hover {
 section:nth-of-type(1) {
 	background-color: #000;
 	text-align: center;
-	overflow: hidden;
+	padding: 150px 0;
 }
 .white {
 	color: #fff;
 }
-section:nth-of-type(2) > h2 {
-	padding: 100px 0 0;
+section:nth-of-type(2)  {
+	padding: 50px 0;
 }
 .central {
 		text-align: center;
@@ -55,7 +53,7 @@ section:nth-of-type(2) > h2 {
 .ulWelcome {
 		display: flex;
 	flex-wrap: wrap;
-   margin: 20px -10px;
+   margin: 40px -10px;
    list-style: none;
    padding: 0;
 }
@@ -77,6 +75,9 @@ li > div {
 }
 .ulWelcome div:hover {
 	border-color:  #2fd08d;
+}
+.ulWelcome img {
+	margin: 15px 0;
 }
 .ulBOT div img {
 	max-width: 100%;
@@ -120,19 +121,47 @@ footer {
 	color: #2fd08d;
 }
 h1 {
-	padding:  100px 0 20px;
+	margin-bottom: 20px;
 }
 p {
 	max-width: 800px;
 	margin: 0 auto;
 	color: #9a9a9a;
-	padding: 0 0 40px;
 }
 h2 {
 	color: black;
+	margin-bottom: 20px;
 }
 .conteiner {
 	max-width: 1040px;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+@media screen and  (max-width: 992px)  {
+.ulWelcome li {
+  flex-basis: 50%;
+}
+.ulWelcome li:nth-child(n+3) {
+	margin-top: 20px;
+}
+.ulBOT li {
+  width: 50%;
+}
+.ulBOT li:nth-child(n+3) {
+	margin-top: 20px;
+}
+}
+@media screen and (max-width: 740px) {
+.ulWelcome li {
+  	flex-basis: 100%;
+}
+.ulWelcome li:nth-child(n+2) {
+	margin-top: 20px;
+}
+.ulBOT li {
+  width: 100%;
+}
+.ulBOT li:nth-child(n+2) {
+	margin-top: 20px;
+}
 }
